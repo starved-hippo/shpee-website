@@ -30,7 +30,7 @@ body{
     transition: 0.3s;
 }
 .shpee:hover{
-    transform: skew(-7deg) translateX(0%) scale(110%);
+    transform: skew(-7deg) translateX(0%) scale(103%);
 }
 @keyframes intro {
     0%{transform: skew(-30deg) translateX(-90%);}
