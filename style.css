@@ -2,9 +2,17 @@
 body{
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffadc4;
     font-size:x-large;
+    background-image: repeating-linear-gradient(-45deg, #ffadc4, #ffadc4 50px, #cc8a9c 50px, #cc8a9c 100px);
+    background-size: 200% 800%;
+    background-position: 0% 0%;
+    animation: slide 10s linear infinite;
 }
+
+@keyframes slide {
+    100%{background-position: 100% 0;}
+}
+
 .shpee{
     text-align: center;
     transform: skew(-7deg) translateX(0%);
@@ -18,18 +26,12 @@ body{
     color:  #76aab2;
     text-shadow: 2px 2px #76aab2;
     animation: intro 1s ; 
-     
     transition: 0.3s;
 }
-
 @keyframes intro {
     0%{transform: skew(-30deg) translateX(-90%);}
 }
 
-@keyframes movin {
-    0%{transform: translateX(-20px) skew(-7deg);}
-    100%{transform: translateX(20px) skew(-7deg);}
-}
 .catboy{
     position: fixed;
     left: 50%;
