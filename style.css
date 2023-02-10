@@ -7,37 +7,43 @@ body{
 }
 .shpee{
     text-align: center;
-    transform: skew(-30deg) translateX(-90%);
+    transform: skew(-7deg) translateX(0%);
     background-color: #aaf3ff;
     height: auto;
     padding: 10px;
     padding-right: 30px;
-    animation: intro 0.5s;   
-    transition: 0.5s;
-    margin: 3%;
+    margin: 1%;
     margin-left: -10%;
-    box-shadow: 10px 10px 3px#91c7cb;
-    color:  white;
-}
-.shpee:hover{
-    transform: translateX(0%);
+    box-shadow: 7px 7px#91c7cb;
+    color:  #76aab2;
+    text-shadow: 2px 2px #76aab2;
+    animation: intro 1s ; 
+     
+    transition: 0.3s;
 }
 
+@keyframes intro {
+    0%{transform: skew(-30deg) translateX(-90%);}
+}
+
+@keyframes movin {
+    0%{transform: translateX(-20px) skew(-7deg);}
+    100%{transform: translateX(20px) skew(-7deg);}
+}
 .catboy{
     position: fixed;
     left: 50%;
     bottom: 0;
     transform: translate(-50%);
     margin: 0 auto;
-    animation: catboy 0.1s;
+    animation: catboy 0.7s;
     height: 85%;
-    transition: 0.5s;
-    z-index: -1;
+    transition: 0.3s;
+    z-index: 1;
 }
 .catboy:hover{
     height: 87%;
 }
-
 @keyframes catboy {
     0%{transform: translate(-50%, 100%);}
 }
