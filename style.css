@@ -1,0 +1,28 @@
+
+body{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #1ac4aa;
+    font-size:x-large;
+}
+.shpee{
+    text-align: center;
+    transform: skew(-30deg) translateX(-90%);
+    background-color: #1dddbe;
+    height: auto;
+    padding: 10px;
+    padding-right: 30px;
+    animation: intro 0.5s;   
+    transition: 0.5s;
+    margin-left: -10%;
+}
+.shpee:hover{
+    transform: translateX(0%);
+}
+.jerma{
+    height: 100%;
+    background: url("https://cdn.discordapp.com/attachments/761252299888656415/1073431316198080622/Evil_JermaT.png") no-repeat;
+}
+.jerma:hover{
+    background: url("https://cdn.discordapp.com/attachments/761252299888656415/1073431331658268792/JermaSusT.png") no-repeat;    
+}
