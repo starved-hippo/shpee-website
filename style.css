@@ -64,21 +64,6 @@ body{
     transform: translate(-50%) scale(1.4);
     filter: brightness(130%);
 }
-.catdiv{
-    position: fixed;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%);
-    margin: 0;
-    padding: 0;
-    border: 0;
-    animation: catboy 0.7s;
-    height: 85%;
-    transition: 0.3s;
-    z-index: 1;
-    background-color: aquamarine;
-}
-
 element {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
