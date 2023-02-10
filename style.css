@@ -5,7 +5,7 @@ body{
     background-image: repeating-linear-gradient(-45deg, #ffadc4, #ffadc4 50px, #cc8a9c 50px, #cc8a9c 100px);
     background-size: 400% 800%;
     background-position: 0% 0%;
-    animation: slide 20s ease infinite;
+    animation: slide 20s ease-in-out infinite;
 }
 @keyframes slide {
     0%{background-position: 0 0;}
@@ -36,16 +36,36 @@ body{
     position: fixed;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%);
-    margin: 0 auto;
     animation: catboy 0.7s;
     height: 85%;
     transition: 0.3s;
     z-index: 1;
+    border: 0;
+    width: 331px;
+    height: 557px;
+    transform-origin: bottom;
+    transform: translate(-50%) scale(1.35);
+    background: no-repeat url(https://cdn.discordapp.com/attachments/761252299888656415/1073565912948559912/catboylayer.png);
 }
 .catboy:hover{
-    height: 87%;
+    transform-origin: bottom;
+    transform:translate(-50%)  scale(1.5);
+    cursor: pointer;
 }
 @keyframes catboy {
     0%{transform: translate(-50%, 100%);}
+}
+.catdiv{
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    animation: catboy 0.7s;
+    height: 85%;
+    transition: 0.3s;
+    z-index: 1;
+    background-color: aquamarine;
 }
