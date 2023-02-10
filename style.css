@@ -4,13 +4,15 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:x-large;
     background-image: repeating-linear-gradient(-45deg, #ffadc4, #ffadc4 50px, #cc8a9c 50px, #cc8a9c 100px);
-    background-size: 200% 800%;
+    background-size: 400% 800%;
     background-position: 0% 0%;
-    animation: slide 10s linear infinite;
+    animation: slide 30s ease infinite;
 }
 
 @keyframes slide {
-    100%{background-position: 100% 0;}
+    0%{background-position: 0 0;}
+    50%{background-position: 100% 0;}
+    100%{background-position: 0 0;}
 }
 
 .shpee{
