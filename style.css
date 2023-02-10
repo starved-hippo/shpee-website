@@ -1,4 +1,5 @@
 body{
+    overflow: hidden;  
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:x-large;
@@ -27,6 +28,9 @@ body{
     text-shadow: 2px 2px #76aab2;
     animation: intro 1s ; 
     transition: 0.3s;
+}
+.shpee:hover{
+    transform: skew(-7deg) translateX(0%) scale(103%);
 }
 @keyframes intro {
     0%{transform: skew(-30deg) translateX(-90%);}
@@ -58,19 +62,10 @@ body{
 .catboy:active{
     transition: 0.1s;
     transform: translate(-50%) scale(1.4);
-    filter: brightness(120%);
+    filter: brightness(130%);
 }
-.catdiv{
-    position: fixed;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%);
-    margin: 0;
-    padding: 0;
-    border: 0;
-    animation: catboy 0.7s;
-    height: 85%;
-    transition: 0.3s;
-    z-index: 1;
-    background-color: aquamarine;
+element {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
 }
